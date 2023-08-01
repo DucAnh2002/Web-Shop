@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 header{
     background-color: #dfd742;
     text-align: center;
+    height: 44px;
 }
 
 /* ................................. NAV ...................... */
@@ -170,7 +171,7 @@ a{
 .menu-bar ul li{
     padding: 20px 6px;
     transition: all 0.3s ease ;
-    width:100%;
+
 
 }
 .menu-bar ul li:hover{
@@ -206,8 +207,78 @@ a{
     width: 7px;
     display:block;
     top: 30px;
-    right:45px;
+    right: 5px;
     z-index:2;
     transform: rotate(45deg);
     
+}
+
+/* --------------------------------- ADRESS-FORM-------------------- */
+
+.adress-form{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top:0px;
+    left:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display:none;
+}
+
+.adress-form-content{
+    border-radius: 5px;
+    width: 400px;
+    height: 450px;
+    background-color: #FFF;
+}
+
+.adress-form-content form{
+    padding: 0 40px;
+
+}
+.adress-form-content h2{
+    font-size: 14px;
+    padding: 12px 0px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.adress-form-content h2 span{
+    display:block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right:0px;
+    cursor:pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+
+}
+
+.adress-form-content form input, select{
+    height:45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+
+} 
+
+.adress-form-content form button {
+    margin-top: 20px;
+    height:40px;
+    width: 70%;
+    background-color: #F97E0E;
+    outline: none;
+    border:none;
+    color:#FFF;
+    cursor:pointer;
 }

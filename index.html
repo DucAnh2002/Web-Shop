@@ -7,6 +7,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://kit.fontawesome.com/ccf0a51be4.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script> 
+
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
@@ -17,8 +19,32 @@
     <nav>
         <div class="container">
             <ul>
-                <li> <a hreft=""> <img style="width:150px" src="images/anh2.jpg"  alt=""> </a></li>
-                <li> <a hreft=""> Khánh Hòa<i class="fa-solid fa-sort-down"></i></a></li>
+                <li> <a hreft=""> <img style="width:150px" src="images/anh3.png"  alt=""> </a></li>
+                <li id="adress-form"> <a hreft="#"> Khánh Hòa<i class="fa-solid fa-sort-down"></i></a>
+                    <div class="adress-form">
+                        <div class="adress-form-content">
+                            <h2> Chọn địa chỉ nhận hàng <span> X Đóng</span></h2>
+                            <form action="">
+                                <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                                <select name="" id="">
+                                    <option value="#">--Chọn địa điểm</option>
+                                    <option value="#">--Đà Nẵng</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">--Chọn Quận/Huyện</option>
+                                    <option value="#">--Đà Nẵng</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="#">--Chọn phường/xã</option>
+                                    <option value="#">--Đà Nẵng</option>
+                                </select>
+                                <input type="text" placeholder="Số nhà, tên đường">
+                                <button>XÁC NHẬN</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </li>
                 <li> <input type="text" placeholder="Bạn tìm gì?" ><i class="fa-solid fa-magnifying-glass"></i></li>
                 <li> <a hreft=""></a><button><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</button></li>
                 <li> <a hreft=""> Lịch sử <br> đơn hàng </a> </li>
@@ -29,7 +55,7 @@
                 
             </ul>
         </div>
-        
+
     </nav>
 <section class="menu-bar">
     <div class="container">
