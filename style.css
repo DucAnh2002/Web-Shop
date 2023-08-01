@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
     background-color: #dfd742;
     text-align: center;
@@ -159,8 +164,50 @@ a{
 .menu-bar ul li a i{
     margin-right: 6px;
 
+
+}
+
+.menu-bar ul li{
+    padding: 20px 6px;
+    transition: all 0.3s ease ;
+    width:100%;
+
 }
 .menu-bar ul li:hover{
     background-color: #fff;
 
+}
+
+.menu-bar ul li:nth-child(9){
+    position: relative;
+
+}
+.menu-bar ul li:nth-child(9)::before{
+    position: relative;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #F51212;
+    border-radius: 5px;
+    right: -25px;
+    top: 0px;
+    font-size: 10px;
+    padding-left: 3px;
+    color:#fff;
+
+}
+
+.menu-bar ul li:nth-child(9)::after{
+    position: absolute;
+    content:"";
+    background-color: #F51212;
+    height: 7px;
+    width: 7px;
+    display:block;
+    top: 30px;
+    right:45px;
+    z-index:2;
+    transform: rotate(45deg);
+    
 }
