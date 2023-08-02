@@ -227,6 +227,7 @@ a{
     justify-content: center;
     text-align: center;
     display:none;
+    z-index:999 ;
 }
 
 .adress-form-content{
