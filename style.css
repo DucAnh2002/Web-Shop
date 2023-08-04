@@ -311,12 +311,13 @@ a{
     padding:5px;
 
 }
-.menu-bar-content ul li:hover .submenu{
-    display: block ;
-}
+
 .submenu ul li:hover{
     background: none;
 }
 .submenu ul li:hover a{
     color:#FED100;
+}
+.menu-bar-content ul li:hover .submenu{
+    display: block ;
 }
