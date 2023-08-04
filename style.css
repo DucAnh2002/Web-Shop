@@ -158,6 +158,15 @@ a{
     justify-content: space-between;
 
 }
+
+
+
+.menu-bar-content > ul > li{
+    padding: 20px 6px;
+    transition: all 0.3s ease ;
+
+
+}
 .menu-bar ul li a {
     color:#111;
     font-size: 13px;
@@ -167,23 +176,16 @@ a{
 
 
 }
-
-.menu-bar ul li{
-    padding: 20px 6px;
-    transition: all 0.3s ease ;
-
-
-}
 .menu-bar ul li:hover{
     background-color: #fff;
 
 }
 
-.menu-bar ul li:nth-child(9){
+.menu-bar-content > ul > li:nth-child(9){
     position: relative;
 
 }
-.menu-bar ul li:nth-child(9)::before{
+.menu-bar-content > ul > li:nth-child(9)::before{
     position: relative;
     content: "Giảm 5%";
     display: block;
@@ -219,7 +221,7 @@ a{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     top:0px;
     left:0px;
     display:flex;
@@ -282,4 +284,39 @@ a{
     border:none;
     color:#FFF;
     cursor:pointer;
+}
+
+/* ---------- Thông tin phụ kiện---------- */
+.menu-bar-content ul li{
+    position: relative;
+
+}
+.submenu{
+    position: absolute;
+    background-color: #757474;
+    width:200px;
+    height: auto;
+    left:0;
+    top: 100%;
+    padding: 12Px;
+    display: none;
+
+}
+
+.submenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.submenu ul li{
+    padding:5px;
+
+}
+.menu-bar-content ul li:hover .submenu{
+    display: block ;
+}
+.submenu ul li:hover{
+    background: none;
+}
+.submenu ul li:hover a{
+    color:#FED100;
 }
